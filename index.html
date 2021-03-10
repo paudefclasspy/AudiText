@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/style.css') }}"/>
+    <title>AudiText</title>
+    <link rel="icon" href="auditext.png" type="image/png">
+</head>
+<body>
+    <div id = "speechContainer">
+        <center><h1> Upload your audio here!</h1></center>
+    <center><form method="post" enctype="multipart/form-data"></center>
+        <center><p>Here you need to select a file.</p></center>
+        <center><img src="{{url_for('static', filename='arrow.png')}}" align="middle" width="50" height="100"/></center>
+    <center><input  type="file" id ="uploadFile" name = "file"></center>
+            <br>
+            <center><p>Click on Transcribe when you are done uploading the file.</p></center>
+        <center><img src="{{url_for('static', filename='arrow.png')}}" align="middle" width="50" height="100"/></center>
+        <center><input type ="submit" id ="sumbitButton" value = "Transcribe"/></center>
+        </form>
+        {% if transcript != "" %}
+        <div id = "transcript">
+            <center><h1>Your AudiText</h1></center>
+            <center><p>{{transcript}}</p></center>
+        </div>
+        {% endif %}
+    </div>
+
+</body>
+</html>
