@@ -1,0 +1,52 @@
+@font-face {
+    font-family: "San Francisco";
+    font-weight: 400;
+    src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff");
+  }
+
+body {
+  background-color:white;
+  font-family:'San Francisco';
+  margin:0;
+  padding:0;
+  color:black;
+  font-weight: 900;
+  font-size: 30px;
+  }
+p{
+  font-size:25px;
+}
+.header {
+    display:grid;
+    grid-template-columns: 1fr;
+    background-color: #323232;
+    opacity: .96;
+    height: 2.7em;
+    width: 100%;
+    color: #FAFAFA;
+    text-align:center;
+    align-items:center;
+    position:fixed;
+  }
+#sumbitButton{
+  background-color:#0191FE;
+  color:white;
+  border-radius: 5px;
+  border:none;
+  padding:10px 30px;
+  font-size: 15px;
+
+}
+#sumbitButton:hover{
+  cursor: pointer;
+}
+#uploadFile{
+  background-color:#0191FE;
+  color:white;
+  border-radius: 5px;
+  border:none;
+  padding:10px 30px;
+}
+#uploadFile:hover{
+  cursor: pointer;
+}
