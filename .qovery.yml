@@ -1,0 +1,11 @@
+---
+application:
+  name: "auditext"
+  project: "weqrer"
+  organization: "QoveryCommunity"
+routers:
+- name: "main-auditext"
+  routes:
+  - application_name: "auditext"
+    paths:
+    - "/*"
